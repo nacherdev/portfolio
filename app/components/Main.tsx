@@ -71,6 +71,9 @@ function Main() {
                             <Image width={35} height={35} className="transition ease-in-out duration-300 transform scale-100 hover:scale-105" src="/img/linkedin.png" alt="LinkedIn" />
                         </a>
                     </section>
+                    <section className="flex justify-center">
+                        <p className="pt-3">© 2025 Mohammad Nacher Rahman Akter</p>
+                    </section>
                 </footer>
             </div>
         </>
