@@ -8,10 +8,12 @@ function Main() {
                 
                 <header className="pt-10 mb-16">
                     <nav className='bg-white/15 border-2 border-white max-w-[800px] mx-auto backdrop-blur-sm rounded-full px-6 py-3 flex items-center justify-between shadow-lg'>
-                        <a href="#">
-                            <Image src="/img/img2.jpeg" width={12} height={12} className='rounded-full object-cover' alt="Inicio"/>
-                        </a>
-                        
+                        <div className="relative w-10 h-10">
+                            <a href="#">
+                                <Image src="/img/img2.jpeg" fill className='rounded-full object-cover' alt="Inicio"/>
+                            </a>
+                        </div>
+                            
                         <div className="grow flex justify-center space-x-6 font-bold text-white">
                             <a href="#proyectos" className=" hover:text-blue-600">Proyectos</a>
                             <a href="#estudios" className=" hover:text-blue-600">Estudios</a>
@@ -20,8 +22,6 @@ function Main() {
                         </div>
                     </nav> 
                 </header>
-                
-
                 
                 <main id="proyectos" className="p-4 grow">
                     <section className="relative w-full h-[500px] mb-20"> 
@@ -42,17 +42,28 @@ function Main() {
                     
                     <div className="flex flex-col space-y-8 max-w-xl mx-auto items-center">
                         <h2 className="text-3xl font-extrabold text-white text-center mb-8">Mis Proyectos Destacados</h2>
+                        
+                        <Card
+                            titulo="Constructis"
+                            img="/img/logo-constructis.png"
+                            descripcion="Pagina de constructis"
+                            link="https://constructis.nacherdev.es"
+                        />
+                        
                         <Card
                             titulo="Gestor-DB"
                             img="/img/pera.png"
                             descripcion="Un gestor de base de datos hecho para un cliente en las prácticas"
+                            link="/"
                         />
 
                         <Card
                             titulo="Portfolio"
                             img="/img/cacahuete.png"
                             descripcion="Mi portfolio hecho con Next.js"
+                            link="/"
                         />
+
                     </div>
                     </section>
                 </main>
